@@ -40,21 +40,27 @@ function pauseSong(){
 }
 
 function prevSong(){
-  songIndex--;
+  
+  const isPlaying=musicContainer.classList.contains('play');songIndex--;
   if(songIndex<0){
     console.log();
     songIndex=songs.length-1;
   }
   loadSong(songs[songIndex]);
-  playSong();
+  if(isPlaying){
+    playSong();
+  }
 }
 function nextSong(){
+  const isPlaying=musicContainer.classList.contains('play');
   songIndex++;
   if(songIndex >songs.length-1){
     songIndex=0;
   }
   loadSong(songs[songIndex]);
-  playSong();
+  if(isPlaying){
+    playSong();
+  }
 }
 function updateProgress(e){
   const {duration, currentTime}=e.srcElement;
