@@ -36,6 +36,9 @@ body{
     bottom: 0;
     left: 0;
 }
+#title{
+    color: hotpink;
+}
 .navigation{
     display: flex;
     justify-content: center;
