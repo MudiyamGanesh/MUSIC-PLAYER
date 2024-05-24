@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="https://res.cloudinary.com/dyevbrysx/image/upload/v1716091447/image-removebg-preview_3_sleusr.png" 
+    href="https://res.cloudinary.com/dyevbrysx/image/upload/v1716091447/image-removebg-preview_3_sleusr.png">
+    <title>MUSIC PLAYER</title>
+</head>
+<body>
+    <h1>MUSIC PLAYER</h1>
+
+    <div class="music-container " id="music-container">
+        <div class="music-info">
+            <h4 id="title"></h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+        <audio src="" id="audio"></audio>
+        <div class="image-container">
+            <img src="music/StarBoy.mp3" alt="music-cover" id="cover">
+        </div>
+        
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class='bx bx-skip-previous'></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class='bx bx-play'></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class='bx bx-skip-next'></i>
+            </button>
+        </div>
+    </div>
+    <script src="mp.js" ></script>
+</body>
+</html>
