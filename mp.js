@@ -11,7 +11,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ["Ney Veyrey", "Adhento Gaani","Naan Gaali","Enna Sona", "Neela yevaru", "Sajni", "Ye Mantramo", "Cheliya Cheliya"];
+const songs = ["Ney Veyrey", "Adhento Gaani","Naan Gaali","Enna Sona", "Neela yevaru", "Sajni", "Ye Mantramo", "Cheliya Cheliya", "Chitti"];
 
 // Keep track of song
 let songIndex = 4;
